@@ -1,0 +1,37 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="Ratomir.Racun"
+	x:Name="Window"
+	Title="Racun"
+	Width="340.697" Height="343" MinWidth="305" MinHeight="381" Loaded="Window_Loaded" WindowStyle="None">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid>
+            <TextBlock HorizontalAlignment="Left" Margin="10,53.733,0,0" TextWrapping="Wrap" Text="Šifra:" VerticalAlignment="Top" FontSize="16" Foreground="Black"/>
+            <PasswordBox x:Name="pbSifra" HorizontalAlignment="Left" Margin="73,51.733,0,0" VerticalAlignment="Top" Width="209.03" ToolTip="Šifra" FontSize="16" MaxLength="4"/>
+            <Border CornerRadius="7" BorderBrush="Aqua" BorderThickness="2,2,2,2" Margin="73,0,50.667,32.246" Height="45.333" VerticalAlignment="Bottom">
+                <UniformGrid Rows="1" Columns="2">
+                    <Button x:Name="btnPotvrdi" Content="Potvrdi" Margin="5,5,1.5,4.54" FontSize="15" FontWeight="Bold" Background="Lime" Foreground="Black" BorderBrush="Black" BorderThickness="2" Cursor="Hand" Click="btnPotvrdi_Click" IsDefault="True"/>
+                    <Button x:Name="btnOdustani" Content="Odustani" Margin="0,5,6,0" FontSize="14" FontWeight="Bold" Background="Red" Foreground="Black" BorderThickness="2" BorderBrush="Black" Cursor="Hand" Height="31" VerticalAlignment="Top" Click="btnOdustani_Click" IsCancel="True"/>
+                </UniformGrid>
+            </Border>
+
+            <UniformGrid Margin="73,80.013,50.667,82.579" Columns="3" Rows="4" >
+                <Button x:Name="btn7" Content="7" FontSize="21.333" FontWeight="Bold" Background="Black" Foreground="White" Cursor="Hand" Margin="0,0,5,13.97" Click="btn7_Click" TabIndex="8"/>
+                <Button x:Name="btn8" Content="8" FontSize="21.333" FontWeight="Bold" Background="Black" Foreground="White" Cursor="Hand" Margin="0,0,5,13.97" Click="btn8_Click" TabIndex="9"/>
+                <Button x:Name="btn9" Content="9" FontSize="21.333" FontWeight="Bold" Background="Black" Foreground="White" Cursor="Hand" Margin="0,0,5,14" Click="btn9_Click" TabIndex="10"/>
+                <Button x:Name="btn4" Content="4" FontSize="21.333" FontWeight="Bold" Background="Black" Foreground="White" Cursor="Hand" Margin="0,0,5,13.971" Click="btn4_Click" TabIndex="5"/>
+                <Button x:Name="btn5" Content="5" FontSize="21.333" FontWeight="Bold" Background="Black" Foreground="White" Cursor="Hand" Margin="0,0,5,13.971" Click="btn5_Click" TabIndex="6"/>
+                <Button x:Name="btn6" Content="6" FontSize="21.333" FontWeight="Bold" Background="Black" Foreground="White" Cursor="Hand" Margin="0,0,5,13.971" Click="btn6_Click" TabIndex="7"/>
+                <Button x:Name="btn1" Content="1" FontSize="21.333" FontWeight="Bold" Background="Black" Foreground="White" Cursor="Hand" Margin="0,0,5,13.971" Click="btn1_Click" TabIndex="2"/>
+                <Button x:Name="btn2" Content="2" FontSize="21.333" FontWeight="Bold" Background="Black" Foreground="White" Cursor="Hand" Margin="0,0,5,13.971" Click="btn2_Click" TabIndex="3"/>
+                <Button x:Name="btn3" Content="3" FontSize="21.333" FontWeight="Bold" Background="Black" Foreground="White" Cursor="Hand" Margin="0,0,5,13.971" Click="btn3_Click" TabIndex="4"/>
+                <Button x:Name="btn0" Content="0" FontSize="21.333" FontWeight="Bold" Background="Black" Foreground="White" Cursor="Hand" Margin="0,0,5,13.97" Click="btn0_Click" TabIndex="1"/>
+                <Button x:Name="btnC" FontSize="21.333" FontWeight="Bold" Foreground="#FFF9F9F9" BorderBrush="Black" BorderThickness="2" Cursor="Hand" Margin="0,0,5,14" Background="Black" Content="C" Click="btnC_Click" TabIndex="12"/>
+                <Button x:Name="btnUndo" Content="←" FontSize="35" Padding="0,-12,0,0" FontWeight="Bold" Foreground="#FFF9F9F9" BorderBrush="Black" BorderThickness="2" Cursor="Hand" Margin="0,0,5,14" Background="Black" Click="btnUndo_Click" TabIndex="11"/>
+            </UniformGrid>
+            <TextBlock HorizontalAlignment="Left" Height="27" Margin="10,10,0,0" TextWrapping="Wrap" Text="UNESITE VAŠU ŠIFRU OD 4 BROJA" VerticalAlignment="Top" Width="312.697" TextAlignment="Center" FontWeight="Bold" FontSize="19"/>
+        </Grid>
+    </Grid>
+</Window>

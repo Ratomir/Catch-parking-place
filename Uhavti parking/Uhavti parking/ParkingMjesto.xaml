@@ -1,0 +1,22 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="Uhavti_parking.ParkingMjesto"
+	x:Name="UserControl"
+	d:DesignWidth="90" d:DesignHeight="115">
+
+	<Grid x:Name="LayoutRoot" Margin="0,0,0,-26.844">
+		<Border x:Name="borGranica" BorderBrush="#FF256E5D" BorderThickness="2" HorizontalAlignment="Left" Width="90" Height="115" VerticalAlignment="Top" CornerRadius="8">
+			<StackPanel>
+				<TextBlock x:Name="tbZauzeto" Height="20" Padding="0,1,0,0" TextWrapping="Wrap" Text="Slobodno" FontStretch="Expanded" FontWeight="Bold" TextAlignment="Center" />
+				<TextBlock x:Name="tbVrijeme" Height="20" Padding="0,1,0,0" TextWrapping="Wrap" Text="Vrijeme" FontStretch="Expanded" FontStyle="Italic" TextAlignment="Center"/>
+				<TextBlock x:Name="tbDatum" Height="20" Padding="0,1,0,0" TextWrapping="Wrap" Text="Datum" FontStretch="Expanded" FontStyle="Italic" TextAlignment="Center"/>
+				<Image x:Name="imgSlika" Source="Slobodno.png" Height="50"/>
+			</StackPanel>
+		</Border>
+		<TextBlock x:Name="tbBrojMjesta" HorizontalAlignment="Left" Height="16.844" Margin="10,115,0,0" TextWrapping="Wrap" Text="Broj" VerticalAlignment="Top" Width="70" TextAlignment="Center" FontSize="15" FontWeight="Bold"/>
+	</Grid>
+</UserControl>
