@@ -1,6 +1,4 @@
 Catch-parking-place
 ===================
 
-Catch-parking-place is C# Project working in WPF.
-
-Application working localy. To use this application you must have MySql server, example Wamp Server (download http://www.wampserver.com/en/). Upload sql script parking.sql on sql server.
+Catch parking place is C# application made with WPF (Windows Presentation Fondation) controls. The application offers to user reserve parking place, software work with MySQL database, temporarily just local. Each parking place has a graphical display to show user it is place reserved or not. The system is designed that can be used on touch screen machines. An application to have given price list, calculate an amount for payment which is the time from when is place taken to cancel reservation. 
